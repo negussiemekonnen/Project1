@@ -19,24 +19,24 @@ uses:
     - lib.collections  
        
   type:
-    lib.myresource2
+    lib.notesresource
             
 
-/noteid:
-  get:
-    responses:
-     200:
+  /{noteid}:
+    get:
+     responses:
+      200:
         body:
           application/json:
              type: lib.datatype
              example: !include Examples/note.raml
-  is:
+    is:
     - lib.collections
-  type:
-    lib.myresource
+    type:
+     lib.noteresource
 
-  post:
-    responses:
+    post:
+     responses:
       201:
         body:
           application/json:
@@ -48,13 +48,3 @@ uses:
                   "createdAt": 2021-07-03T21:00:00,
                    "updatedAt": 2021-07-04T21:00:00,            
           }
-              
-        
- 
-
-  
-  
-      
-              
-     
-
