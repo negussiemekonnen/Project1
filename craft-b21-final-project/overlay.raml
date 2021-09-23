@@ -1,0 +1,20 @@
+#%RAML 1.0 Overlay፡
+extends: craft-b21-final-project.raml
+
+usage: ለአማረኛ ተናጋሪ
+documentation:
+  - title: መግቢያ
+    content: ይሂ ጽህፍ ለአማረኛ ተናጋሪ ብቻ ነው
+/notes:
+  description: note response have get http method
+  get:
+    body:
+      application/json:
+        example:
+          {
+           "መታውቂያ": 3,
+           "ርዕስ": "የማታ ስራዎች",
+           "ይዘት": "የዝህ ምሽት ስራ ሁለት ስዐት የጨረሰ በግሩፐ የተሰራ ነው ",
+           "የተሰራበት ቀን": 2021-07-03T21:00:00,
+           "የተሻሻለበት ቀን": 2021-07-04T21:00:00
+          }

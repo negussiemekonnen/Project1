@@ -1,0 +1,10 @@
+#%RAML 1.0 Library
+types:
+  datatype:  !include dataType.raml
+traits:
+  collections: !include trait.raml
+resourceTypes:
+  notesresource: !include Resource/resource1.raml
+  noteresource: !include Resource/resource2.raml
+securitySchemes:
+  basic: !include security.raml
