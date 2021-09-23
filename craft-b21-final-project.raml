@@ -1,0 +1,60 @@
+#%RAML 1.0
+title: craft-b21-final-project
+baseUri: 
+description: API specification for craft B21 final project
+version: 1.0
+
+uses:
+ lib: library.raml
+ 
+/notes:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: lib.datatype []
+            example:  !include Examples/notes.raml    
+  is:
+    - lib.collections  
+       
+  type:
+    lib.myresource2
+            
+
+/noteid:
+  get:
+    responses:
+     200:
+        body:
+          application/json:
+             type: lib.datatype
+             example: !include Examples/note.raml
+  is:
+    - lib.collections
+  type:
+    lib.myresource
+
+  post:
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+               { 
+                    "noteid":1,
+                  "title":"Morning routine",
+                  "content":"This morning routine involved 2 hours of workout at the gym",
+                  "createdAt": 2021-07-03T21:00:00,
+                   "updatedAt": 2021-07-04T21:00:00,            
+          }
+              
+        
+ 
+
+  
+  
+      
+              
+     
+

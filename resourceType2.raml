@@ -1,0 +1,17 @@
+#%RAML 1.0 ResourceType
+post:
+  description: <<resourcePathName>> created
+  responses:
+    201:
+      body:
+        application/json:
+             example: {"message":"<<resourcePathName>> Created successfully"}        
+
+
+put:
+  description: <<resourcePathName>> updated
+  responses:
+      201:
+        body:
+          application/json:
+            example: {"message":"<<resourcePathName>> updated successfuly"}
