@@ -1,0 +1,31 @@
+Check List
+************************
+1) Understanding Business Logic
+2) RAML
+3) Flow Design
+4) Project Structure
+5) Naming Convention
+6) Git repo name
+7) Bitbucket
+8) Jira, Slack
+9) File Externalizing
+10) No hard code
+11) Environment
+12) Munit
+13) Team communication
+14) API security
+15) Deployment
+
+Evaluation Criteria
+
+************************
+1)RAML Design--------------30%
+2)Project Structure---------5%
+-naming
+3) low design/component selection------------10%
+4)Implementation--------25%
+5)Error handling ----------- 15%
+6) Munit---------15%
+-Coverage 70%
+
+
